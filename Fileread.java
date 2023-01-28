@@ -13,6 +13,7 @@ public class  Fileread {
     List<Integer> Result2 = new ArrayList<>();
  
     File file1 = new File("C:\\Users\\hp\\Desktop\\Mycode\\StudentsTotal.txt");
+     // Enter total  student full name withot space as a text file and give the path of that text file here
 
     try {
       Scanner scanner = new Scanner(file1);
@@ -34,6 +35,7 @@ public class  Fileread {
     for(int k=0;k<words1.size();k++){
      name =words1.get(k);   
         int Tpresent = 0;
+     // Enter the folder location where the all attendance are save and make sure that all textfile contain student full name  is without space ( like kamleshlodhi ) but the next student name seprate by space 
         File folder = new File("C:\\Users\\hp\\Desktop\\Mycode\\java\\Attendences2024");
         File[] listOfFiles = folder.listFiles();
 
